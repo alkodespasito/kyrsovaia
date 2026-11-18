@@ -36,3 +36,119 @@ text-decoration: none;
 font-size: 24px;
 font-weight: bold;}
  
+.women{
+    background-image: url('https://i.playground.ru/i/pix/2285543/image.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    position: relative;
+}
+.women-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* Стрелки слайдера */
+.arrow-btn {
+    background-color: #ffe600;
+    color: #000000;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.arrow-btn:hover {
+    background-color: #333;
+}
+
+/* Белая панель с ценами */
+.price-panel {
+    background-color: rgba(255, 255, 255, 0.9); /* Белый с легкой прозрачностью */
+    padding: 30px;
+    border-radius: 10px;
+    color: #333;
+    flex: 1; /* Растягивается на доступное пространство */
+    max-width: 600px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* Тень для объема */
+}
+
+.price-title {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.price-title span {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Список услуг */
+.price-list {
+    list-style: none;
+}
+
+.price-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(0,0,0,0.05); /* Едва заметная линия между строками */
+}
+
+.price-list li:last-child {
+    border-bottom: none;
+}
+
+.service-name {
+    color: #555;
+}
+
+.service-price {
+    font-weight: bold;
+    color: #000;
+}
+
+/* ================= СЕКЦИЯ О НАС ================= */
+.about {
+    padding: 60px 50px;
+    background-color: #111;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+/* Простая сетка для будущих блоков "О нас" */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    color: #aaa;
+    font-size: 14px;
+}
