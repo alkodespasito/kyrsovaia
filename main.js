@@ -34,3 +34,35 @@ prevBtn.addEventListener('click', () => {
     }
     showSlide(currentIndex);
 });
+const principleSlides = document.querySelectorAll('.principle-slide');
+const prevPrincipleBtn = document.querySelector('.prev-principle');
+const nextPrincipleBtn = document.querySelector('.next-principle');
+
+let principleIndex = 0;
+
+function showPrincipleSlide(index) {
+    principleSlides.forEach((slide) => {
+        slide.classList.remove('active');
+    });
+    principleSlides[index].classList.add('active');
+}
+
+if (principleSlides.length > 0) {
+    showPrincipleSlide(principleIndex);
+
+    nextPrincipleBtn.addEventListener('click', () => {
+        principleIndex++;
+        if (principleIndex >= principleSlides.length) {
+            principleIndex = 0;
+        }
+        showPrincipleSlide(principleIndex);
+    });
+
+    prevPrincipleBtn.addEventListener('click', () => {
+        principleIndex--;
+        if (principleIndex < 0) {
+            principleIndex = principleSlides.length - 1;
+        }
+        showPrincipleSlide(principleIndex);
+    });
+}

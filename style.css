@@ -189,4 +189,110 @@ font-weight: bold;}
     }
 }
 
+/* Сетка на 4 колонки в ряд */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Оформление каждой из 4 карточек */
+.about-card {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-top: 3px solid #f1c40f; /* Золотой акцент сверху */
+    padding: 25px;
+    border-radius: 10px;
+    color: #ccc;
+    font-size: 15px;
+    line-height: 1.5;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* Лёгкий подъём при наведении */
+.about-card:hover {
+    transform: translateY(-5px);
+    border-color: #f1c40f;
+}
+
+/* Заголовок внутри карточки (если используете <h3>) */
+.about-card h3 {
+    color: #f1c40f;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+/* Адаптив: 2 в ряд на планшетах */
+@media (max-width: 992px) {
+    .about-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Адаптив: 1 в ряд на телефонах */
+@media (max-width: 576px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Секция "Принцип работы" */
+.principles {
+    padding: 60px 50px;
+    background: linear-gradient(135deg, #1a1a1a 0%, #3a3a3a 100%);
+}
+
+/* Контейнер карусели: стрелки по бокам, карточка в центре */
+.principles-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.principles-track {
+    flex: 1;
+}
+
+/* Белая карточка слайда */
+.principle-slide {
+    display: none;
+    background-color: #ffffff;
+    color: #222222;
+    padding: 50px 40px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 0.5s ease;
+}
+
+.principle-slide.active {
+    display: block;
+}
+
+.principle-slide p {
+    margin: 0;
+}
+
+/* Жёлтые кнопки-стрелки (используют ваш класс .arrow-btn + доп. фиксация) */
+.prev-principle,
+.next-principle {
+    flex-shrink: 0;
+    background-color: #f1c40f;
+    color: #111;
+    font-weight: bold;
+}
+
+.prev-principle:hover,
+.next-principle:hover {
+    background-color: #d4ac0d;
+    color: #000;
+}
 
