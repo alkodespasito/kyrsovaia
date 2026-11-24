@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-      <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <TItle>Мойка ЗОЛОТОЕ ДОЖДЬ</TItle>
+        <script src="main.js" defer></script>
+    </head>
+    <body>
 <header class="header">
     <div class="logo">
         <span class="logo-white">Автомойка</span>
@@ -197,7 +199,53 @@
     <button class="arrow-btn next-principle" aria-label="Вперёд">&#8594;</button>
   </div>
 </section>
-     <script src="main.js"></script>
+<!-- Верхнюю часть лучше вынести в отдельную секцию перед подвалом -->
+<section class="booking-section" id="booking">
+    <aside class="promo-box">
+        <ul class="promo-list">
+            <li>Первым клиентам, пользующимся нашими услугами, скидка 10%</li>
+            <li>Постоянные клиенты получают скидку до 20%</li>
+            <li>Услуги автомойки во время праздников всегда со скидкой 5%</li>
+        </ul>
+    </aside>
+
+    <form class="booking-form" id="bookingForm">
+        <fieldset class="form-fields">
+            <input type="text" class="form-input" placeholder="Имя" required>
+            <input type="tel", class="form-input" placeholder="Номер телефона" required>
+            <select class="form-input form-select" required>
+                <option value="" disabled selected>Тип автомобиля</option>
+                <option value="sedan">Легковушка (седан, хэтчбек, универсал)</option>
+                <option value="crossover">Минивэн / Кроссовер</option>
+                <option value="suv">Внедорожник / Джип</option>
+                <option value="minibus">Микроавтобус / Мини-грузовик</option>
+            </select>
+        </fieldset>
+        <button type="submit" class="submit-btn">Записаться на мойку</button>
+    </form>
+</section>
+
+<!-- Сам футер  -->
+<footer class="footer" id="contacts">
+    <p class="footer-brand">
+        <strong class="logo">
+            <span class="logo-white">ЗОЛОТОЕ</span> <span class="logo-gold">ВРЕМЯ</span>
+        </strong>
+        <small class="copyright">© 2026 Автомойка «Золотое время»</small>
+    </p>
+
+    <address class="footer-address">
+        г. Мытищи, ул. Примерная, д. 15<br>
+        <span>Ежедневно: с 08:00 до 23:00</span>
+    </address>
+
+    <ul class="footer-contacts">
+        <li><a href="tel:+788005553555" class="footer-phone">+7 (880) 055-53-55</a></li>
+        <li><a href="#" class="social-link">WhatsApp</a></li>
+        <li><a href="#" class="social-link">Telegram</a></li>
+    </ul>
+</footer>
+
 
 </body>
 </html>
