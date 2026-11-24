@@ -125,8 +125,7 @@ font-weight: bold;}
 
 .about {
     padding: 60px 50px;
-    background: linear-gradient(137deg, rgb(0, 0, 0) 6%, rgb(17, 16, 0) 36%, rgb(34, 32, 0) 57%, rgb(66, 63, 0) 96%, rgb(129, 125, 0) 100%);
-}
+     background: radial-gradient(circle at 50% 0%, rgba(241, 196, 15, 0.12) 0%, #111 70%)}
 
 .section-title {
     text-align: center;
@@ -242,7 +241,7 @@ font-weight: bold;}
 /* Секция "Принцип работы" */
 .principles {
     padding: 60px 50px;
-    background: linear-gradient(137deg, rgb(0, 0, 0) 6%, rgb(17, 16, 0) 36%, rgb(34, 32, 0) 57%, rgb(66, 63, 0) 78%, rgb(129, 125, 0) 88%, rgb(255, 247, 0) 99%);
+    background: rgb(129, 125, 0) 88%, rgb(255, 247, 0) 99%;
 }
 
 /* Контейнер карусели: стрелки по бокам, карточка в центре */
